@@ -157,7 +157,7 @@ a:hover {
     right: 15px;
 }
 
-.search .section_search_button:hover>i {
+.search .section_search_button:hover>.fa-arrow-right-long {
     color: #4C5FD5;
 }
 
