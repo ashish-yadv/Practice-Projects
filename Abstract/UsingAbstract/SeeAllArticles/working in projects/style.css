@@ -150,118 +150,35 @@ a:hover {
     font-size: 1.5em;
 }
 
+/* Header ends here */
 
 
 
-/* Main content styling starts here */
-#main_content {
+.see_all_10_articles {
     width: 100%;
-    height: 360vh;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 60px;
-}
-
-/* Main content 1 start */
-#main_content_1 {
-    width: 100%;
-    height: 230vh;
+    height: 72vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
 }
-
-.main_content_headings {
-    font-size: 33px;
-    margin-bottom: 2.4rem;
+.see_all_10_articles ul {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 9rem;
 }
-
-#main_content a {
+.see_all_10_articles ul li {
+    margin-bottom: 0.6rem;
+}
+.see_all_10_articles ul li a {
     color: #000000;
     font-size: 19.2px;
     font-weight: 400;
     margin-bottom: 0.6rem;
 }
-
-#main_content .content_list>a {
-    color: #4C5FD5;
-    position: relative;
-    top: 9px;
-}
-
-#main_content li {
-    position: relative;
-    left: 18px;
-}
-
-#left_main_content {
-    width: 45%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-    align-items: flex-start;
-}
-
-.content_list li {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-#right_main_content {
-    width: 45%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-    align-items: flex-start;
-}
-
-#commit_your_work {
-    position: relative;
-    bottom: 63px;
-}
-
-#work_with_libraries{
-    position: relative;
-    top: 30px; 
-}
-/* Main content 1 end */
-
-
-
-/* Main content 2 start*/
-.main_content_2 {
-    width: 50%;
-    height: calc(360vh - 230vh);
-    padding-left: 80px;
-}
-
-.left_main_content_2 {
-    width: 100%;
-    height: 100%;
-}
-
-.left_main_content_2 .content_list {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    box-sizing: border-box;
-}
-
-.main_content_2 .sub_content_list h2 {
-    margin-bottom: 0.9rem;
-}
-
-/* Main content 2 end*/
-
-/* Main content styling ends here */
 
 
 
@@ -282,8 +199,6 @@ a:hover {
     padding-bottom: 100px;
     display: flex;
     justify-content: space-around;
-    /* position: relative; */
-    /* margin: 0 auto; */
 }
 
 .footer .footer_container .footer_column {
