@@ -80,7 +80,7 @@ a {
 }
 
 .header_image {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,7 +89,7 @@ a {
 }
 
 .header_image img {
-    width: 70%;
+    max-width: 70%;
     margin: auto;
     height: auto;
 }
@@ -446,7 +446,7 @@ a {
 
 
 footer {
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     box-sizing: border-box;
 }
@@ -461,6 +461,13 @@ footer a {
     height: 100%;
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
+}
+
+@media (max-width: 1306px) {
+    footer {
+        flex-wrap: wrap;
+        background-color: red;
+    }
 }
 
 .row1_logo_text {

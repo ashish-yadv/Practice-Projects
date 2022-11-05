@@ -1,0 +1,13 @@
+:root {
+    --white: #ffffff;
+    --dark: #000000;
+    --light-green: #00b289;
+    --neutral-green: #029e7a;
+    --gray: #4c4d5f;
+    --yellow:#f8db62;
+
+    --button-font-size: 14px;
+    --button-letter-spacing: 0.9px;
+
+    --footer-link-font-size: 14.1px;
+}
