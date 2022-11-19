@@ -24,7 +24,7 @@
             <div class="nav_container">
                 <ul class="nav_links">
                     <li><a href="#">Product&nbsp;<i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="#">Templates&nbsp;<i class="fa-solid fa-angle-down"></i></a></li>
+                    <li id="templates"><a href="#">Templates&nbsp;<i class="fa-solid fa-angle-down"></i></a></li>
                     <li><a href="#">Pricing</a></li>
                     <li><a href="#">Reviews</a></li>
                 </ul>
@@ -36,7 +36,22 @@
         </nav>
     </header>
 
+    <div class="nav_links_content_container">
+        <div id="templates_content">
+            
+        </div>
+        <div id="pricing_content">
 
+        </div>
+        <div id="reviews_content">
+
+        </div>
+    </div>
+
+    <div id="blue_bg">
+        
+    </div>
+    <!-- MAIN CONTENT START -->
     <main class="main_content">
         <div class="plans_pricing">
             <div class="pricing_head">
@@ -55,17 +70,49 @@
                 <p>Ideal for freelancers and contractors just starting out.</p>
                 <span class="price_container">
                     <span class="currency_symbol">$</span>
-                    <span class="price">24 </span>/MONTH
+                    <span class="price">24</span>/MONTH
                 </span>
                 <ul class="benefits">
-                    <li>All Templates</li>
-                    <li>Unlimited Clients & Projects</li>
-                    <li>Invoicing & Payments</li>
-                    <li>Proposals & Contracts</li>
-                    <li>Tasks & Time Tracking</li>
-                    <li>Client CRM</li>
-                    <li>Expense Tracking</li>
-                    <li>Up to 5 Project Collaborators</li>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>All Templates</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Unlimited Clients & Projects</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Invoicing & Payments</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Proposals & Contracts</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Tasks & Time Tracking</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Client CRM</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Expense Tracking</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Up to 5 Project Collaborators</div>
+                    </div>
                 </ul>
                 <div class="plan_start_free_btn"><a href="#">START FREE</a></div>
             </div>
@@ -77,15 +124,51 @@
                     <span class="price">39 </span>/MONTH
                 </span>
                 <ul class="benefits">
-                    <li>Everything in Starter plus...</li>
-                    <li>Custom Branding</li>
-                    <li>Forms & Questionnaires</li>
-                    <li>Workflow Automations</li>
-                    <li>Client Portal</li>
-                    <li>QuickBooks Integration</li>
-                    <li>Calendly Integration</li>
-                    <li>Zapier Integration</li>
-                    <li>Up to 15 Project Collaborators</li>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Everything in Starter plus...</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Custom Branding</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Forms & Questionnaires</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Workflow Automations</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Client Portal</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>QuickBooks Integration</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Calendly Integration</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Zapier Integration</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Up to 15 Project Collaborators</div>
+                    </div>
                 </ul>
                 <div class="plan_start_free_btn"><a href="#">START FREE</a></div>
             </div>
@@ -97,22 +180,134 @@
                     <span class="price">79 </span>/MONTH
                 </span>
                 <ul class="benefits">
-                    <li>Everything in Starter and Professional plus...</li>
-                    <li>Subcontractor Management</li>
-                    <li>Hiring Agreement Templates (1099 contracts)</li>
-                    <li>Subcontractor Onboarding</li>
-                    <li>Talent Pool</li>
-                    <li>3 Team Seats (additional seats $9/month </li>
-                    <li>Accountant Access</li>
-                    <li>Connect Multiple Bank Accounts</li>
-                    <li>Unlimited Subcontractors</li>
-                    <li>Unlimited Project Collaborators</li>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Everything in Starter and Professional plus...</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Subcontractor Management</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Hiring Agreement Templates (1099 contracts)</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Subcontractor Onboarding</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Talent Pool</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>3 Team Seats (additional seats $9/month</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Accountant Access</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Connect Multiple Bank Accounts</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Unlimited Subcontractors</div>
+                    </div>
+                    <div class="tick_div">
+                        <img src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e668ac7510abc1d0f5c1c14_green-tick.svg"
+                            width="12" alt="tick icon" class="margin-right margin-small">
+                        <div>Unlimited Project Collaborators</div>
+                    </div>
                 </ul>
                 <div class="plan_start_free_btn"><a href="#">START FREE</a></div>
             </div>
         </div>
 
+        <section class="add_ons_section">
+            <h2>Super charge your work with add-ons</h2>
+            <div class="add_ons_container">
+                <div class="add_ons_info">
+                    <span class="add_ons_info_container">
+                        <h3>Collaborators</h3>
+                        <p>Invite other users to specific projects for limited access and functionality.</p>
+                    </span>
+                    <span class="add_ons_plan_type">FREE</span>
+                </div>
+                <div class="add_ons_info">
+                    <span class="add_ons_info_container">
+                        <h3>Partners</h3>
+                        <p>Invite other users for full account access and company management.</p>
+                    </span>
+                    <span class="add_ons_plan_type">$9<span class="add_ons_plan_period">/MONTH</span></span>
+                </div>
+                <div class="add_ons_info">
+                    <span class="add_ons_info_container">
+                        <h3>Bonsai Tax</h3>
+                        <p>Track expenses, identify write-offs, and estimate quarterly taxes easily.</p>
+                        <a href="#" id="learn_more">LEARN MORE<i class="fa-solid fa-angle-right"></i><a>
+                    </span>
+                    <span class="add_ons_plan_type">$10<span class="add_ons_plan_period">/MONTH</span></span>
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- MAIN CONTENT END -->
+
+    <div id="tag_line_container">
+        <span class="tag_line">It’s your business.
+            We’re here to help it grow.</span>
+        <a href="#" id="tag_line_start_free_btn">START FREE</a>
+    </div>
+
+
+    <!-- Frequently Asked Questions START -->
+    <div class="faqs">
+        <h3>Frequently Asked Questions</h3>
+
+        <details>
+            <summary>How does the free trial works?</summary>
+            <p>When you start your trial with Bonsai you'll receive full, unlimited access to all of Bonsai's Workflow
+                or Workflow Plus Features! You will need to enter your credit card information to begin your trial, but
+                don't worry - we won't charge you anything until the subscription ends! If you wish to cancel at any
+                time during the trial period, you can do so through your Subscriptions Settings Page.</p>
+        </details>
+
+        <details>
+            <summary>Can I change plans anytime?</summary>
+            <p>Yes, you can from within your account. If you have already subscribed to a plan, or want to downgrade or
+                upgrade your current one, you can do this by going to your "Settings" and "Subscription".</p>
+        </details>
+
+        <details>
+            <summary>How do I pause my Bonsai subscription?</summary>
+            <p>We totally understand that with the nature of freelancing, work ebbs and flows so you might not always
+                need your Bonsai subscription to remain active! The good news is that you can cancel or pause your
+                monthly subscription at any time without penalty. Once cancelled, you'll be able to continue logging in
+                to access all your documents and even continue to use our free features, like Time Tracking! In order to
+                cancel your subscription, login to your Bonsai account.</p>
+        </details>
+
+        <details>
+            <summary>What is your refund policy?</summary>
+            <p>If you contact us within 2 weeks of being charged for your subscription, we will be happy to issue a
+                refund for you!Beyond those 2 weeks, you will need to cancel or modify the subscription from the
+                Subscriptions Tab in Settings to avoid future charges, but refunds will not be issued. This applies to
+                both monthly and annual plans.</p>
+        </details>
+    </div>
+    <!-- Frequently Asked Questions END -->
 
     <footer class="footer">
         <div class="product">
