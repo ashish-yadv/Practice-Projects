@@ -8,8 +8,8 @@
 }
 
 body {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .header {
@@ -102,16 +102,16 @@ body {
 
 /* HEADER Ends HERE */
 
-#blue_bg {
+/* #blue_bg {
     width: 90%;
-    height: 120%;
+    height: 90%;
     background-color: var(--texture_color);
     position: absolute;
     top: -72%;
-    right: -24%;
+    right: -3%;
     rotate: 151deg;
     z-index: -1;
-}
+} */
 
 /* MAIN CONTENT START */
 .main_content {
@@ -133,13 +133,15 @@ body {
 
 .plans_pricing {
     padding: 9.3rem 0 3.6rem 0;
+    width: 100%;
 }
 
 .pricing_head {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 210px;
+    background-color: red;
 }
 
 .pricing_head>h2 {
@@ -189,7 +191,7 @@ body {
 
 .plan {
     width: 30%;
-    height: 121vh;
+    min-height: 121vh;
     box-sizing: border-box;
     background-color: var(--white);
     border: 1px solid var(--border-light-gray);
@@ -197,7 +199,7 @@ body {
     padding: 3.3rem 30px;
     margin: 0.6rem 0;
     position: relative;
-    box-shadow: 0 0 36px 3px #00000019;
+    box-shadow: 0 0 36px 3px var(--box-shadow);
 }
 
 .plan>h3 {
@@ -279,7 +281,8 @@ body {
     border-radius: 4.2px;
     position: absolute;
     left: 27px;
-    bottom: 54px;
+    bottom: 3rem;
+    margin-top: 3rem;
 }
 
 .plan_start_free_btn a {
@@ -295,19 +298,78 @@ body {
     align-items: center;
 }
 
+/* ADD-ONS Section STARTS Here  */
 .add_ons_section {
     width: 100%;
-    background-color: red;
+    margin: auto;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4.2rem;
+    /* background-color: red; */
 }
 
 .add_ons_section>h2 {
     font-size: 2.1rem;
     font-weight: 500;
     font-family: "EB Garamond", serif;
+    margin: 1.2rem 0;
 }
 
+.add_ons_container {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_ons_info_container {
+    color: var(--light-gray);
+}
+
+.add_ons_info_container>h3 {
+    font-size: 1.375rem;
+}
+
+.add_ons_info_container>p {
+    font-size: 14px;
+}
+
+.add_ons_info {
+    width: 100%;
+    border-radius: 12px;
+    background-color: var(--white);
+    margin: 30px;
+    padding: 3rem 2.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 36px 3px var(--box-shadow);
+}
+
+.add_ons_plan_type {
+    margin-right: 6rem;
+    color: var(--light-gray);
+    font-size: 2.4rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.add_ons_plan_period {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ADD-ONS Section ENDS Here  */
+
 /* MAIN CONTENT END */
+
 
 
 
