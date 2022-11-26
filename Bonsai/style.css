@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+*::selection {
+    background-color: rgb(0, 255, 234);
+}
+
 body {
     max-width: 100%;
     box-sizing: border-box;
@@ -96,7 +100,6 @@ body {
 .nav_links_content_container {
     width: 51rem;
     height: 60vh;
-    background-color: red;
     display: none;
 }
 
@@ -115,7 +118,7 @@ body {
 
 /* MAIN CONTENT START */
 .main_content {
-    width: 80%;
+    max-width: 80%;
     margin: 51px auto;
 }
 
@@ -141,7 +144,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: red;
 }
 
 .pricing_head>h2 {
@@ -301,13 +303,11 @@ body {
 /* ADD-ONS Section STARTS Here  */
 .add_ons_section {
     width: 100%;
-    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 4.2rem;
-    /* background-color: red; */
+    margin: 4.2rem 0;
 }
 
 .add_ons_section>h2 {
@@ -341,7 +341,7 @@ body {
     width: 100%;
     border-radius: 12px;
     background-color: var(--white);
-    margin: 30px;
+    margin: 30px 0;
     padding: 3rem 2.1rem;
     display: flex;
     justify-content: space-between;
@@ -366,24 +366,99 @@ body {
     text-align: center;
 }
 
+#learn_more {
+    font-size: var(--button-font-size);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--neutral-green);
+}
+
+.fa-angle-right {
+    margin-left: 4.2px;
+    transition: 0.3s;
+}
+
+#learn_more:hover .fa-angle-right {
+    transform: translateX(6px);
+}
+
 /* ADD-ONS Section ENDS Here  */
 
 /* MAIN CONTENT END */
 
 
+#tag_line_container {
+    max-width: 80%;
+    margin: 5.4rem auto;
+    min-height: 15vh;
+    border-radius: 10px;
+    background-color: var(--light-light-green);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+}
+
+.tag_line {
+    font-size: 2.4rem;
+}
+
+#tag_line_start_free_btn {
+    min-width: 15%;
+    height: 60px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: var(--button-font-size);
+    font-weight: 600;
+    border-radius: 4.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-green);
+}
+
+.btn:hover,
+#tag_line_start_free_btn:hover {
+    background-color: var(--neutral-green);
+}
+
+
+
+/* FREQUENTLY Asked Questions Start*/
+.faqs {
+    width: 80%;
+    margin: auto;
+    min-height: 40vh;
+}
+
+.faqs > h3 {
+    font-size: 2.7rem;
+    margin-bottom: 2.1rem;
+}
+
+.faqs > details {
+    font-size: 1.8rem;
+    margin: 1.2rem 0;
+}
+
+.faqs > details:hover {
+    cursor: pointer;
+}
+
+/* FREQUENTLY Asked Questions End*/
 
 
 
 /* FOOTER START */
 .footer {
-    width: 90%;
-    margin: auto;
-    padding: 6rem 0;
-    margin: 6rem 0;
+    width: 100%;
+    padding: 3.6rem 0;
+    margin: 3rem  0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
+    background-color: var(--box-shadow);
 }
 
 .footer ul li {
