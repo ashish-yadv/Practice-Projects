@@ -1,378 +1,432 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Work Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-    color: #464951;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Work Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+   color: #464951;
 }
-.main_header {
-    width: 100%;
-    height: 190vh;
-    box-sizing: border-box;
-    background-color: #eafaf1;
+
+*::selection {
+   background-color: rgb(255, 255, 0);
 }
+
+.main_header_outer {
+   max-width: 100%;
+   min-height: 190vh;
+   margin: auto;
+   box-sizing: border-box;
+   background-color: #eafaf1;
+}
+
+.main_header_inner {
+   margin: 0 10.2rem;
+}
+
 .navbar {
-    width: 100%;
-    height: 14.1vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    box-sizing: border-box;
+   max-width: 100%;
+   min-height: 14.1vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   box-sizing: border-box;
 }
-.navbar .logo {
-    margin-left: 10.2rem;
-}
+
 .nav_links {
-    width: 36%;
-    height: 10.5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    margin-right: 10.2rem;
-    flex-wrap: wrap;
+   min-width: 45%;
+   height: 10.5vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-sizing: border-box;
 }
+
 .nav_links ul {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
+   min-width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-sizing: border-box;
 }
 
 .nav_links ul li {
-    list-style: none;
+   list-style: none;
 }
+
 .nav_links ul li a {
-    color: #00ad6a;
-    font-weight: 700;
-    text-decoration: none;
-}
-.nav_links ul li a:hover {
-    color: #000000;
-}
-.nav_links ul li #pricing {
-    color: #000000;
-}
-.signup_btn {
-    padding: 7.2px 18px;
-    color: #00ad6a;
-    font-weight: 700;
-    text-decoration: none;
-    border: 2px solid #00ad6a;
-    position: relative;
-}
-.signup_btn:hover {
-    left: 10px;
-    bottom: 10px;
-}
- /* HEADER MAIN BODY STARTS HERE */
-.header_main_body {
-    width: 100%;
-    height: calc(190vh - 14.1vh);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
- /* FREE TRIAL STARTS HERE */
-.free_trial {
-    width: 42%;
-    height: 30vh;
-    text-align: center;
-    margin-top: 3rem;
-    box-sizing: border-box;
-}
-.trial_heading {
-    font-size: 3.75rem;
-    font-weight: 800;
-    line-height: 1;
-    margin-bottom: 1rem;
-    color: #000000;
-}
-#why_pulse {
-    font-size: 1.125rem;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    position: relative;
-    top: 18px;
-}
- /* FREE TRIAL ENDS HERE */
- /* PLANS Section STARTS here */
-.plans {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 0 9rem;
- }
- .plans a {
-    text-decoration: none;
- }
-.basic_plan {
-    width: 24%;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
- }
- .basic_plan h3 {
    color: #00ad6a;
- }
- .basic_plan a {
-    text-decoration: underline;
- }
- .basic_plan a:hover {
+   font-weight: 700;
+   text-decoration: none;
+}
+
+.nav_links ul li a:hover {
    color: #000000;
-  }
- .basic_plan_list {
+}
+
+.nav_links ul li #pricing {
+   color: #000000;
+}
+
+.signup_btn {
+   padding: 7.2px 18px;
+   color: #00ad6a;
+   font-weight: 700;
+   text-decoration: none;
+   border: 2px solid #00ad6a;
+   position: relative;
+}
+
+.signup_btn:hover {
+   left: 10px;
+   bottom: 10px;
+}
+
+/* HEADER MAIN BODY STARTS HERE */
+.header_main_body {
    width: 100%;
-   height: 80%;
+   min-height: calc(190vh - 14.1vh);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* FREE TRIAL STARTS HERE */
+.free_trial {
+   max-width: 42%;
+   min-height: 30vh;
+   text-align: center;
+   margin-top: 3rem;
+   box-sizing: border-box;
+}
+
+.trial_heading {
+   font-size: 3.75rem;
+   font-weight: 800;
+   line-height: 1;
+   margin-bottom: 1rem;
+   color: #000000;
+}
+
+#why_pulse {
+   font-size: 1.125rem;
+   letter-spacing: 1px;
+   line-height: 1.5;
+   position: relative;
+   top: 18px;
+}
+
+/* FREE TRIAL ENDS HERE */
+/* PLANS Section STARTS here */
+.plans {
+   max-width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+
+}
+
+.plans a {
+   text-decoration: none;
+}
+
+.basic_plan {
+   max-width: 24%;
+   min-height: 60vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.basic_plan h3 {
+   color: #00ad6a;
+}
+
+.basic_plan a {
+   text-decoration: underline;
+}
+
+.basic_plan a:hover {
+   color: #000000;
+}
+
+.basic_plan_list {
+   width: 100%;
+   min-height: 80%;
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
    line-height: 21px;
- }
+}
+
 .small_business_plan {
-    background-color: #ffffff;
-    width: 33%;
-    height: 81vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #00ad6a;
-    overflow: hidden;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    position: relative;
-    left: 51px;
-    z-index: 1;
- }
- .small_business_plan::before {
-    content: 'RECOMMENDED';
-    width: 100%;
-    padding: 6px 0;
-    text-align: center;
-    font-size: 0.81rem;
-    font-weight: 600;
-    color: #ffffff;
-    background: #00ad6a;
-    position: absolute;
-    top: 0;
-    }
- .small_business_plan h2 {
-    font-size: 3.3rem;
-    font-weight: 900;
-    line-height: 51px;
-    text-align: center;
-    color:#00ad6a;
- }
- .small_business_plan h5 {
-    font-size: 0.6rem;
-    font-weight: 900;
-    letter-spacing: 1px;
-    text-align: center;
-    color:#000000;
-    margin: 1.5rem 0 0 0.6rem;
- }
- .small_business_plan ul {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 0.9rem;
-    position: relative;
-    left: 9px;
- }
- .premium_plan {
-    background-color: #ffffff;
-    width: 30%;
-    height: 66vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #d6dae5;
-    position: relative;
-    overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
- }
- .premium_plan::before {
-    content: 'Complex business wthmultiple financial accounts, currencies, or auditing needs?';
-    width: 100%;
-    font-size: 0.9rem;
-    position: absolute;
-    top: -1px;
-    text-align: center;
-    padding: 18px 0;
-    letter-spacing: 0.3px;
-    border: 1px solid #d6dae5;
-    background-color: #d6dae554;
- }
- .premium_plan h2 {
-    width: 57%;
-    text-align: center;
-    font-size: 2.1rem;
-    font-weight: 500;
-    margin-top: 60px;
-    color: #00ad6a;
- }
- .premium_plan h5 {
-    font-size: 0.6rem;
-    font-weight: 900;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #000000;;
-    margin: 1.5rem 0 0 0.6rem;
- }
- .premium_plan ul {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 0.6rem;
-    margin-top: 0.9rem;
- }
- .price {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #83858a;
-    margin: 0.6rem 0 1.2rem 0;
- }
- .btn {
-    width: 12rem;
-    height: 3rem;
-    font-size: 1.32rem;
-    font-weight: 800;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #1fe374;
- }
- .btn_hover:hover .btn {
-    scale: 1.08;
-    border-color: #00ad6a;
-    color: #000000;
- }
- .plan_info {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding-right: 3px;
-    margin: 0  0 0.9rem 0;
- }
- .plan_text {
+   background-color: #ffffff;
+   min-width: 33%;
+   min-height: 81vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #00ad6a;
+   overflow: hidden;
+   border-top-left-radius: 9px;
+   border-top-right-radius: 9px;
+   position: relative;
+   left: 51px;
+   z-index: 1;
+}
+
+.small_business_plan::before {
+   content: 'RECOMMENDED';
+   width: 100%;
+   padding: 6px 0;
+   text-align: center;
+   font-size: 0.81rem;
+   font-weight: 600;
+   color: #ffffff;
+   background: #00ad6a;
+   position: absolute;
+   top: 0;
+}
+
+.small_business_plan h2 {
+   font-size: 3.3rem;
+   font-weight: 900;
+   line-height: 51px;
+   text-align: center;
+   color: #00ad6a;
+}
+
+.small_business_plan h5 {
+   font-size: 0.6rem;
+   font-weight: 900;
+   letter-spacing: 1px;
+   text-align: center;
+   color: #000000;
+   margin: 1.5rem 0 0 0.6rem;
+}
+
+.small_business_plan ul {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   margin-top: 0.9rem;
+   position: relative;
+   left: 9px;
+}
+
+.premium_plan {
+   background-color: #ffffff;
+   min-width: 30%;
+   height: 66vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #d6dae5;
+   position: relative;
+   overflow: hidden;
+   position: relative;
+   box-sizing: border-box;
+}
+
+.premium_plan::before {
+   content: 'Complex business wthmultiple financial accounts, currencies, or auditing needs?';
+   width: 100%;
+   font-size: 0.9rem;
+   position: absolute;
+   top: -1px;
+   text-align: center;
+   padding: 18px 0;
+   letter-spacing: 0.3px;
+   border: 1px solid #d6dae5;
+   background-color: #d6dae554;
+}
+
+.premium_plan h2 {
+   width: 57%;
+   text-align: center;
+   font-size: 2.1rem;
+   font-weight: 500;
+   margin-top: 60px;
+   color: #00ad6a;
+}
+
+.premium_plan h5 {
+   font-size: 0.6rem;
+   font-weight: 900;
+   letter-spacing: 1px;
+   text-align: center;
+   color: #000000;
+   ;
+   margin: 1.5rem 0 0 0.6rem;
+}
+
+.premium_plan ul {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   padding: 0 0.6rem;
+   margin-top: 0.9rem;
+}
+
+.price {
+   font-size: 1.5rem;
+   font-weight: 500;
+   color: #83858a;
+   margin: 0.6rem 0 1.2rem 0;
+}
+
+.btn {
+   width: 12rem;
+   height: 3rem;
+   font-size: 1.32rem;
+   font-weight: 800;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #1fe374;
+}
+
+.btn_hover:hover .btn {
+   scale: 1.08;
+   border-color: #00ad6a;
+   color: #000000;
+}
+
+.plan_info {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: flex-start;
+   padding-right: 3px;
+   margin: 0 0 0.9rem 0;
+}
+
+.plan_text {
    position: relative;
    left: 3px;
    letter-spacing: 0.9px;
- }
- /* PLANS Section ENDS here */
+}
 
- /* HEADER MAIN BODY BOTTOM STARTS HERE */
- #header_main_body_bottom {
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
- }
- #header_main_body_bottom q {
-    width: 55%;
-    font-size: 1.5rem;
-    font-weight: 100;
-    line-height: 2.7rem;
-    text-align: center;
- }
- #header_main_body_bottom span {
-    color: #00ad6a;
-    font-size: 0.9rem;
-    font-weight: 700;
-    text-decoration: none;
-    margin-top: 30px;
- }
- /* HEADER MAIN BODY BOTTOM ENDS HERE */
- /* HEADER MAIN BODY ENDS HERE */
+/* PLANS Section ENDS here */
 
- /* FAQ SECTION STARTS HERE */
- .frequently_asked_questions {
-    width: 100%;
-    height: 120vh;
-    color: #000000;
-    padding: 5.1rem 12rem;
-    margin-bottom: 3.9rem;
- }
- .frequently_asked_questions h2 {
-    font-size: 3rem;
-    display: flex;
-    align-items: center;
-    margin-bottom: 2.1rem;
-    color: #000000;
- }
- #questions {
-    width: 100%;
-    height: calc(108vh - 15vh);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- }
- .left_questions {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 1.2rem;
- }
- .right_questions {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 1.2rem;
- }
- .question h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #000000;
- }
- .question  p {
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.8rem;
- }
- .right_questions div:nth-child(2) {
+/* HEADER MAIN BODY BOTTOM STARTS HERE */
+#header_main_body_bottom {
+   max-width: 100%;
+   min-height: 30vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+#header_main_body_bottom q {
+   max-width: 55%;
+   font-size: 1.5rem;
+   font-weight: 100;
+   line-height: 2.7rem;
+   text-align: center;
+}
+
+#header_main_body_bottom span {
+   color: #00ad6a;
+   font-size: 0.9rem;
+   font-weight: 700;
+   text-decoration: none;
+   margin-top: 30px;
+}
+
+/* HEADER MAIN BODY BOTTOM ENDS HERE */
+/* HEADER MAIN BODY ENDS HERE */
+
+/* FAQ SECTION STARTS HERE */
+.frequently_asked_questions {
+   max-width: 100%;
+   height: 120vh;
+   color: #000000;
+   padding: 5.1rem 12rem;
+   margin-bottom: 3.9rem;
+}
+
+.frequently_asked_questions h2 {
+   font-size: 3rem;
+   display: flex;
+   align-items: center;
+   margin-bottom: 2.1rem;
+   color: #000000;
+}
+
+#questions {
+   width: 100%;
+   height: calc(108vh - 15vh);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.left_questions {
+   width: 40%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   margin-right: 1.2rem;
+}
+
+.right_questions {
+   width: 40%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: 1.2rem;
+}
+
+.question h3 {
+   font-size: 1.2rem;
+   font-weight: 600;
+   color: #000000;
+}
+
+.question p {
+   font-size: 1.2rem;
+   font-weight: 400;
+   line-height: 1.8rem;
+}
+
+.right_questions div:nth-child(2) {
    position: relative;
    bottom: 141px;
- }
- .right_questions div:nth-child(3) {
+}
+
+.right_questions div:nth-child(3) {
    position: relative;
    bottom: 141px;
- }
- /* FAQ SECTION ENDS HERE */
+}
+
+/* FAQ SECTION ENDS HERE */
 
 
 
- /* FOOTER STARTS HERE */
- .footer {
+/* FOOTER STARTS HERE */
+.footer {
    width: 100%;
    height: 54vh;
    display: flex;
    justify-content: space-between;
    align-items: center;
    background-color: #000000;
- }
- .left_footer {
+}
+
+.left_footer {
    width: 50%;
    height: 100%;
    display: flex;
@@ -380,8 +434,9 @@
    justify-content: center;
    align-items: flex-end;
    padding-left: 6rem;
- }
- .left_footer_content {
+}
+
+.left_footer_content {
    width: 90%;
    height: 100%;
    display: flex;
@@ -389,53 +444,118 @@
    justify-content: space-evenly;
    align-items: flex-start;
    margin-left: 3rem;
- }
- #signup_free_trial {
+}
+
+#signup_free_trial {
    text-decoration: none;
    font-weight: 900;
    padding: 1.2rem;
    background: linear-gradient(90deg, #00ad6a, #1fe374);
    transition: 0.3s ease-in-out;
- }
- #signup_free_trial:hover {
+}
+
+#signup_free_trial:hover {
    color: #000000;
    transform: translate3d(6px, -6px, 6px);
- }
- #copyright {
+}
+
+#copyright {
    font-size: 0.81rem;
    font-weight: 600;
- }
- .right_footer {
+}
+
+.right_footer {
    width: 50%;
    height: 100%;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
- }
- .right_footer a {
+}
+
+.right_footer a {
    text-decoration: none;
- }
- table {
+}
+
+table {
    width: 80%;
- }
- th a {
+}
+
+th a {
    font-size: 1.2rem;
    font-weight: 800;
    letter-spacing: 1px;
    color: #ffffff;
- }
- tr {
+}
+
+tr {
    text-align: left;
- }
- td a {
+}
+
+td a {
    letter-spacing: 1px;
    color: #1fe374;
- }
- td a:hover {
+}
+
+td a:hover {
    color: #ffffff;
- }
- td, th {
+}
+
+td,
+th {
    padding: 8px 0;
- }
- /* FOOTER ENDS HERE */
+}
+
+/* FOOTER ENDS HERE */
+
+
+
+/* RESPONSIVENESS */
+
+/* iPads, Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+
+   .navbar {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .nav_links {
+      width: 90%;
+   }
+
+   .main_header_outer {
+      flex-direction: column;
+   }
+
+   .main_header_inner {
+      margin: 0 0.6rem;
+      padding-top: 1.2rem;
+   }
+
+   .header_main_body {
+      margin: 0 auto;
+   }
+
+   .header_main_body * {
+      max-width: 96%;
+   }
+
+   .plans {
+      flex-direction: column;
+   }
+
+   .basic_plan {
+      height: 0vh;
+   }
+
+   .small_business_plan {
+      margin: 1rem auto;
+      left: 0;
+   }
+
+}
+
+/* MOBILE Devices */
+@media (min-width: 320px) and (max-width: 480px) {}
