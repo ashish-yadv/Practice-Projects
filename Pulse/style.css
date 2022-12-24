@@ -7,19 +7,19 @@
 }
 
 *::selection {
-   background-color: rgb(255, 255, 0);
+   background-color: #00fffb;
 }
 
 .main_header_outer {
    max-width: 100%;
    min-height: 190vh;
-   margin: auto;
    box-sizing: border-box;
    background-color: #eafaf1;
 }
 
 .main_header_inner {
-   margin: 0 10.2rem;
+   height: 100%;
+   padding: 0 10.2rem;
 }
 
 .navbar {
@@ -27,8 +27,9 @@
    min-height: 14.1vh;
    display: flex;
    justify-content: space-between;
-   align-items: flex-end;
+   align-items: center;
    box-sizing: border-box;
+   background-color: red;
 }
 
 .nav_links {
@@ -38,10 +39,11 @@
    justify-content: center;
    align-items: center;
    box-sizing: border-box;
+   background-color: green;
 }
 
 .nav_links ul {
-   min-width: 100%;
+   width: 100%;
    height: 100%;
    display: flex;
    justify-content: space-between;
@@ -176,6 +178,7 @@
    position: relative;
    left: 51px;
    z-index: 1;
+   box-sizing: border-box;
 }
 
 .small_business_plan::before {
@@ -189,6 +192,10 @@
    background: #00ad6a;
    position: absolute;
    top: 0;
+}
+
+#small_business_plan_list {
+   flex-wrap: wrap;
 }
 
 .small_business_plan h2 {
@@ -209,7 +216,7 @@
 }
 
 .small_business_plan ul {
-   width: 100%;
+   max-width: 100%;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -222,7 +229,7 @@
 .premium_plan {
    background-color: #ffffff;
    min-width: 30%;
-   height: 66vh;
+   min-height: 66vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -248,7 +255,7 @@
 }
 
 .premium_plan h2 {
-   width: 57%;
+   width: 100%;
    text-align: center;
    font-size: 2.1rem;
    font-weight: 500;
@@ -262,7 +269,6 @@
    letter-spacing: 1px;
    text-align: center;
    color: #000000;
-   ;
    margin: 1.5rem 0 0 0.6rem;
 }
 
@@ -310,7 +316,7 @@
 
 .plan_text {
    position: relative;
-   left: 3px;
+   margin: 0 3px;
    letter-spacing: 0.9px;
 }
 
@@ -320,14 +326,17 @@
 #header_main_body_bottom {
    max-width: 100%;
    min-height: 30vh;
+   box-sizing: border-box;
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
+   padding: 1.5rem 0;
+   margin-bottom: 3rem;
 }
 
 #header_main_body_bottom q {
-   max-width: 55%;
+   min-width: 55%;
    font-size: 1.5rem;
    font-weight: 100;
    line-height: 2.7rem;
@@ -348,9 +357,10 @@
 /* FAQ SECTION STARTS HERE */
 .frequently_asked_questions {
    max-width: 100%;
-   height: 120vh;
+   min-height: 90vh;
+   box-sizing: border-box;
    color: #000000;
-   padding: 5.1rem 12rem;
+   margin: 5.1rem 6rem;
    margin-bottom: 3.9rem;
 }
 
@@ -363,31 +373,30 @@
 }
 
 #questions {
-   width: 100%;
-   height: calc(108vh - 15vh);
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+   max-width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 30% 30% 30%;
+   /* justify-content: space-between;
+   align-items: flex-start; */
 }
 
 .left_questions {
-   width: 40%;
-   height: 100%;
+   max-width: 90%;
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
-   margin-right: 1.2rem;
+   /* margin-left: 1.2rem; */
 }
 
 .right_questions {
-   width: 40%;
-   height: 100%;
+   max-width: 90%;
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
    margin-left: 1.2rem;
+}
+
+.question {
+   margin: 0.6rem 0;
 }
 
 .question h3 {
@@ -400,16 +409,7 @@
    font-size: 1.2rem;
    font-weight: 400;
    line-height: 1.8rem;
-}
-
-.right_questions div:nth-child(2) {
-   position: relative;
-   bottom: 141px;
-}
-
-.right_questions div:nth-child(3) {
-   position: relative;
-   bottom: 141px;
+   margin-top: 0.6rem;
 }
 
 /* FAQ SECTION ENDS HERE */
@@ -418,8 +418,8 @@
 
 /* FOOTER STARTS HERE */
 .footer {
-   width: 100%;
-   height: 54vh;
+   max-width: 100%;
+   min-height: 54vh;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -444,6 +444,7 @@
    justify-content: space-evenly;
    align-items: flex-start;
    margin-left: 3rem;
+   background-color: red;
 }
 
 #signup_free_trial {
@@ -465,7 +466,7 @@
 }
 
 .right_footer {
-   width: 50%;
+   min-width: 50%;
    height: 100%;
    display: flex;
    flex-direction: column;
@@ -478,7 +479,7 @@
 }
 
 table {
-   width: 80%;
+   min-width: 80%;
 }
 
 th a {
@@ -552,10 +553,113 @@ th {
 
    .small_business_plan {
       margin: 1rem auto;
-      left: 0;
    }
 
 }
 
+/* Laptop - 1024px */
+@media(max-width: 1024px) {
+   .main_header_inner {
+      padding: 0 1.8rem;
+   }
+
+   .small_business_plan {
+      left: 0px;
+   }
+
+   .small_business_plan h2 {
+      margin-top: 30px;
+   }
+
+   .premium_plan h2 {
+      margin-top: 70px;
+   }
+
+   .plans {
+      margin-bottom: 15px;
+   }
+
+   .frequently_asked_questions {
+      max-width: 100%;
+      margin: 2.4rem 1.8rem;
+   }
+}
+
 /* MOBILE Devices */
-@media (min-width: 320px) and (max-width: 480px) {}
+@media (min-width: 320px) and (max-width: 480px) {
+   .navbar {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .nav_links {
+      width: 90%;
+   }
+
+   .main_header_outer {
+      flex-direction: column;
+   }
+
+   .main_header_inner {
+      /* margin: 0 0.6rem; */
+      padding-top: 1.2rem 0;
+   }
+
+   .header_main_body {
+      margin: 0 auto;
+   }
+
+   .header_main_body * {
+      max-width: 96%;
+   }
+
+   .plans {
+      flex-direction: column;
+      margin-right: 15px 0;
+      background-color: red;
+      width: 100%;
+   }
+
+   .basic_plan {
+      height: 0vh;
+   }
+
+   .small_business_plan {
+      margin: 1rem auto;
+   }
+
+   .frequently_asked_questions,
+   #questions {
+      display: flex;
+      flex-direction: column;
+      background-color: red;
+   }
+
+   .footer {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .left_footer {
+      width: 100%;
+      padding: 0.9rem;
+   }
+
+   .left_footer_content {
+      width: 100%;
+      margin-left: 0;
+   }
+
+   #signup_free_trial {
+      margin-top: 15px;
+   }
+
+   #copyright {
+      display: none;
+   }
+
+   table {
+      
+   }
+}

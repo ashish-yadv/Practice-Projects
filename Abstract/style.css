@@ -363,6 +363,7 @@ a:hover {
     .main_content {
         max-width: 100%;
         flex-direction: column;
+        padding: 0 1rem;
     }
 
     #right_column_main_content {
