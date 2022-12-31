@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
+  <script src="https://kit.fontawesome.com/f5f371acd3.js" crossorigin="anonymous"></script>
+
   <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png">
 
   <title>Frontend Mentor | News homepage</title>
@@ -19,16 +21,22 @@
 
   <!-- HEADER Section -->
   <header class="header">
-    <ul>
-      <img src="./assets/images/logo.svg" id="logo">
-      <ul id="nav_links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">Trending</a></li>
-        <li><a href="#">Categories</a></li>
+    <nav>
+      <ul class="nav_bar">
+        <img src="./assets/images/logo.svg" id="logo">
+        <input type="checkbox" id="check">
+        <div id="body_overlay"></div>
+          <span id="nav_links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+            <label for="check" id="close_menu"><img src="./assets/images/icon-menu-close.svg"></label>
+          </span>
+          <label for="check" id="open_menu"><img src="./assets/images/icon-menu.svg"></label>
       </ul>
-    </ul>
+    </nav>
   </header>
 
 
@@ -103,14 +111,14 @@
 
 
 
-  <!-- <div class="attribution_container">
+  <div class="attribution_container">
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by
       <a href="https://www.frontendmentor.io/profile/ashishlearn">Ashish Yadav</a>.
     </div>
-  </div> -->
+  </div>
 </body>
 
 </html>
