@@ -5,15 +5,17 @@
     --light-light-green: #00ffc356;
     --light-green: #00b289;
     --neutral-green: #029e7a;
+    --green: #13dfb0;
     --gray: #4c4d5f;
     --light-gray: #545461;
+    --light-gray-transparent: #54546134;
     --border-light-gray: #5454617c;
     --yellow:#f8db62;
     --blue: #0d00ff;
     --texture_color: #00ffc337;
     --box-shadow: #00000019;
 
-    --button-font-size: 14px;
+    --button-font-size: 0.875rem;
     --button-letter-spacing: 0.9px;
 
     --plan-paragraph-font-size: 14px;

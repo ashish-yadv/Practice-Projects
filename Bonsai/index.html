@@ -21,20 +21,143 @@
     <!-- HEADER Start-->
     <header class="header">
         <nav class="navbar">
+            <input type="checkbox" id="nav_check">
             <a href="#"><img src="images/bonsai-logo.svg" id="logo"></a>
             <div class="nav_container">
                 <ul class="nav_links">
-                    <li><a href="#">Product&nbsp;<i class="fa-solid fa-angle-down"></i></a></li>
-                    <li id="templates"><a href="#">Templates&nbsp;<i class="fa-solid fa-angle-down"></i></a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Reviews</a></li>
+                    
+                    <li id="nav_product"><a href="#">Product&nbsp;<i class="fa-solid fa-angle-down"></i></a></li>
+                    <div id="container_nav_product" class="container_nav_links_description">
+                        <div id="client_management">
+                            <h3>Client Management</h3>
+                            <ul>
+                                <li><a href="#">CRM</a></li>
+                                <li><a href="#">Scheduling</a></li>
+                                <li><a href="#">Proposals</a></li>
+                                <li><a href="#">Contracts</a></li>
+                                <li><a href="#">Forms</a></li>
+                            </ul>
+                        </div>
+                        <div id="project_management">
+                            <h3>Project Management</h3>
+                            <ul>
+                                <li><a href="#">Time Tracking</a></li>
+                                <li><a href="#">Tasks</a></li>
+                                <li><a href="#">File Sharing</a></li>
+                                <li><a href="#">Client Portal</a></li>
+                                <li><a href="#">Collaboration</a></li>
+                            </ul>
+                        </div>
+                        <div id="financial_management">
+                            <h3>Financial Management</h3>
+                            <ul>
+                                <li><a href="#">Invoicing</a></li>
+                                <li><a href="#">Payments</a></li>
+                                <li><a href="#">Accounting</a></li>
+                                <li><a href="#">Taxes</a></li>
+                                <li><a href="#">Banking</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <li id="nav_industries"><a href="#">Industries&nbsp;<i class="fa-solid fa-angle-down"></i></a></li>
+                    <div id="container_nav_industries" class="container_nav_links_description">
+                        <div id="client_management">
+                            <h3>Business Services</h3>
+                            <ul>
+                                <li><a href="#">Consulting</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Recruiting</a></li>
+                                <li><a href="#">Virtual Assistant</a></li>
+                                <li><a href="#">More...</a></li>
+                            </ul>
+                        </div>
+                        <div id="project_management">
+                            <h3>Creative and Digital</h3>
+                            <ul>
+                                <li><a href="#">Design</a></li>
+                                <li><a href="#">Photography</a></li>
+                                <li><a href="#">Software Development</a></li>
+                                <li><a href="#">Writing</a></li>
+                                <li><a href="#">More...</a></li>
+                            </ul>
+                        </div>
+                        <div id="financial_management">
+                            <h3>Professional Services</h3>
+                            <ul>
+                                <li><a href="#">Coaching</a></li>
+                                <li><a href="#">Architecture</a></li>
+                                <li><a href="#">Accounting</a></li>
+                                <li><a href="#">Legal</a></li>
+                                <li><a href="#">More...</a></li>
+                            </ul>
+                        </div>
+                        <div id="financial_management">
+                            <h3>Other Services</h3>
+                            <ul>
+                                <li><a href="#">Event Planning</a></li>
+                                <li><a href="#">Interior Design</a></li>
+                                <li><a href="#">Real-Estate</a></li>
+                                <li><a href="#">More...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <li id="nav_templates"><a href="#">Templates&nbsp;<i class="fa-solid fa-angle-down"></i></a></li>
+                    <div id="container_nav_templates" class="container_nav_links_description">
+                        <div id="container_nav_templates_left">
+                            <ul>
+                                <li><a href="#" id="contract_templates">Contract Templates&nbsp;<i
+                                            class="fa-solid fa-arrow-right"></i></a></li>
+                                <li><a href="#">Proposal Templates</a></li>
+                                <li><a href="#">Invoice Templates</a></li>
+                                <li><a href="#">Quote Templates</a></li>
+                                <li><a href="#">Scope of Work Templates</a></li>
+                                <li><a href="#">Brief Templates</a></li>
+                                <li><a href="#">Form Templates</a></li>
+                            </ul>
+                        </div>
+                        <div id="container_nav_templates_right">
+                            <span>
+                                <div id="container_nav_templates_right_1">
+                                    <ul>
+                                        <h6>Featured Contract Templates</h6>
+                                        <li><a href="#">Client Contract Template</a></li>
+                                        <li><a href="#">Free Design Contract Template</a></li>
+                                        <li><a href="#">Free Freelance Contract Template</a></li>
+                                        <li><a href="#">Free Hourly Rate Contarct Template</a></li>
+                                        <li><a href="#">Free Non-Disclosure Agreement Template</a></li>
+                                        <li><a href="#">Free Project Management Agreement Template</a></li>
+                                    </ul>
+                                </div>
+
+                                <div id="container_nav_templates_right_2">
+                                    <ul>
+                                        <li><a href="#">Construction Contract Template</a></li>
+                                        <li><a href="#">Free Employment Contract Template</a></li>
+                                        <li><a href="#">Free General Contract Template</a></li>
+                                        <li><a href="#">Free Independent Contarct Agreement Template</a></li>
+                                        <li><a href="#">Free Online Contract</a></li>
+                                        <li><a href="#">Free Service Agreement Template</a></li>
+                                    </ul>
+                                </div>
+                            </span>
+
+                            <a href="#" id="see_all_templates"><span id="see_all_templates_overlay"></span> see all
+                                templates</a>
+                        </div>
+                    </div>
+                    <li id="nav_pricing"><a href="#">Pricing</a></li>
+                    <li id="nav_reviews"><a href="#">Reviews</a></li>
                 </ul>
                 <div class="nav_buttons">
                     <a href="#" class="btn" id="login_btn">LOG IN</a>
                     <a href="#" class="btn" id="start_free_header_btn">START FREE</a>
                 </div>
+                <label for="nav_check"><i class="fa-solid fa-xmark"></i></i></label>
             </div>
         </nav>
+        <label for="nav_check"><i class="fa-solid fa-bars"></i></label>
     </header>
 
     <div class="nav_links_content_container">
@@ -61,7 +184,11 @@
                 <h2>Plans & Pricing</h2>
                 <div id="monthly_yearly">
                     <p id="#monthly">MONTHLY</p>
-                    <a href="#" id="toggle"></a>
+                    <span id="toggle_container">
+                        <input type="checkbox" id="toggle_check">
+                        <label for="toggle_check" id="toggle_yearly"></label>
+                        <a href="#" id="toggle"></a>
+                    </span>
                     <p id="yearly">YEARLY</p>
                 </div>
             </div>

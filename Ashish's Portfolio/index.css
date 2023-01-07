@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5vw;
+}
+
+.head {
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: #000000d3;
+    color: #fff;
+}
+
+.navigation-bar {
+    max-width: 100%;
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0.199);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 6rem;
+}
+
+#menu {
+    list-style: none;
+    min-width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu li {
+    /* background-color: red; */
+    position: relative;
+}
+
+#menu li a {
+    transition: all 0.3s ease-in-out;
+}
+
+#menu li::after {
+    content: '';
+    position: absolute;
+    bottom: -3.3px;
+    left: 50%;
+    transform: translateX(100%);
+    width: 0%;
+    height: 2.1px;
+    background-color: #00fff2;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu li a:hover {
+    color: #00fff2;
+}
+
+#menu li:hover::after {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#about-me {
+    max-width: 100%;
+    position: relative;
+    /* height: calc(100vh - 12vh); */
+    animation: about-me 5s infinite ease-in-out 0.3s;
+    background-color: red;
+}
+
+@keyframes about-me {
+    
+}
