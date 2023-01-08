@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    background-color: rgb(0, 255, 153);
+    color: #000000;
 }
 
 a {
@@ -13,20 +19,33 @@ a {
 
 .head {
     max-width: 100vw;
-    min-height: 100vh;
-    background-color: #000000d3;
+    height: 100vh;
     color: #fff;
+    background-color: #000000d3;
+    animation: head 0.9s 1 ease-in-out 0.3s;
+}
+
+@keyframes head {
+    0% {
+        background-color: #00000000;
+    }
+
+    100% {
+        background-color: #000000d3;
+    }
 }
 
 .navigation-bar {
-    max-width: 100%;
+    width: 100%;
     height: 12vh;
-    background-color: rgba(0, 0, 0, 0.199);
+    background-color: #0000007e;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding: 0 6rem;
+    padding: 0 6vw;
+    position: fixed;
+    z-index: 1;
 }
 
 #menu {
@@ -34,12 +53,12 @@ a {
     min-width: 30%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    gap: 1.2rem;
 }
 
 #menu li {
-    /* background-color: red; */
     position: relative;
 }
 
@@ -71,13 +90,239 @@ a {
 }
 
 #about-me {
-    max-width: 100%;
+    min-width: 100%;
+    height: calc(100vh - 12vh);
+    box-sizing: border-box;
+    padding: 3rem 8rem 0 8rem;
     position: relative;
-    /* height: calc(100vh - 12vh); */
-    animation: about-me 5s infinite ease-in-out 0.3s;
-    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    animation: about-me 0.9s 1 ease-in-out 0.3s;
 }
 
-@keyframes about-me {
-    
+#about-me-excerpt {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    animation: name-animation 1.5s 1 ease-in-out 0.3s;
 }
+
+#my-name {
+    font-size: 3rem;
+    position: relative;
+    color: #fff;
+    animation: name-animation 0.9s 1 ease-in-out 0.3s;
+}
+
+@keyframes name-animation {
+    0% {
+        color: #ffffff00;
+        bottom: -30px;
+    }
+
+    100% {
+        color: #fff;
+        bottom: 0;
+    }
+}
+
+#excerpt {
+    position: relative;
+    animation: excerpt 0.9s 1 0.9s ease-in-out 0.3s;
+    animation-delay: 0.9s;
+}
+
+@keyframes excerpt {
+    0% {
+        color: #ffffff00;
+        bottom: -30px;
+    }
+
+    100% {
+        color: #fff;
+        bottom: 0;
+    }
+}
+
+#my-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    animation: img-animation 0.9s 1 ease-in-out 0.3s;
+}
+
+@keyframes img-animation {
+    0% {
+        right: -60px;
+        opacity: 0;
+    }
+
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+/* SKILLS Section START */
+.skills-container {
+    max-width: 100vw;
+}
+
+.skills-container>h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 2.1rem 0;
+}
+
+.skills {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.skills h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
+
+.acquired-skills {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000061;
+    backdrop-filter: blur(5px);
+    border-radius: 9px;
+}
+
+.acquired-skills>p {
+    font-size: 1.2rem;
+    line-height: 1.62rem;
+    text-align: justify;
+}
+
+.projects-btn {
+    width: 12rem;
+    height: 3rem;
+    margin-top: 1.2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-btn>a {
+    min-width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 0.6px;
+    background-color: #00e1ff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.projects-btn>a:hover {
+    background-color: #00c2db;
+}
+
+.projects-btn a:hover .fa-angle-left {
+    transition: all 0.6s ease-in-out;
+    transform: rotate(180deg);
+}
+
+/* SKILLS Section END */
+
+.box-shadow {
+    box-shadow: 0px 0px 15px 0px #00000081;
+}
+
+/* PROJECTS Section START */
+.projects-container {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.projects-container>h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 2.1rem 0;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.projects h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
+
+.completed-projects {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000061;
+    backdrop-filter: blur(5px);
+    border-radius: 9px;
+    transition: all 0.3s ease-in-out;
+}
+
+.completed-projects:hover {
+    scale: 1.05;
+}
+
+/* PROJECTS Section END */
+
+
+/* CONTACT-Me Start */
+.footer-container {
+    max-width: 100vw;
+    height: 30vh;
+    background-color: #000000b5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem;
+}
+
+.footer-container>h2 {
+    color: #fff;
+}
+
+.contact-me {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* CONTACT-Me End */
