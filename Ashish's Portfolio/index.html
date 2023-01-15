@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" type="image/x-icon" href="/images/myImg.png">
+
     <script src="https://kit.fontawesome.com/f5f371acd3.js" crossorigin="anonymous"></script>
 
     <title>Ashish Yadav</title>
 
     <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="utilities.css">
 
 </head>
 
@@ -20,27 +24,31 @@
         <nav class="navigation-bar">
             <span id="logo">
                 <img src="">
-                <a href="#">Ashish Yadav</a>
+                <a href="https://github.com/ashish-yadv" target="_blank" id="logo-link">ashish.io</a>
             </span>
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox"><i class="fa-solid fa-bars open-menu"></i></label>
             <ul id="menu">
-                <li><a href="#">About Me</a></li>
+                <li><a href="#about-me">About Me</a></li>
                 <li><a href="#my-skills">Skills</a></li>
-                <li><a href="#my-projects">Projects</a></li>
+                <li><a href="#certification">Certifications</a></li>
+                <li><a href="#my-projects">Active Projects</a></li>
                 <li><a href="#footer">Contact Me</a></li>
                 <li><a href="./Resume/resume.html">Resume</a></li>
+                <label for="menu-checkbox"><i class="fa-solid fa-xmark close-menu"></i></label>
             </ul>
         </nav>
 
         <div id="about-me">
             <div id="about-me-excerpt">
-                <h2 id="my-name">Ashish Yadav</h2>
+                <h2><a href="https://github.com/ashish-yadv" id="my-name" target="_blank">Ashish Yadav</a></h2>
                 <p id="excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque architecto placeat,
                     accusamus dolorum
                     libero exercitationem nisi officiis nobis, iusto distinctio labore commodi ab similique
                     reprehenderit esse perspiciatis possimus! Dolorem, ex!</p>
             </div>
             <div id="my-image">
-                <img src="./images/myImg.png">
+                <a href="https://github.com/ashish-yadv" target="_blank"><img src="./images/myImg.png"></a>
             </div>
         </div>
     </div>
@@ -48,69 +56,92 @@
     <section class="skills-container" id="my-skills">
         <h2>SKILLS</h2>
         <div class="skills">
-            <span class="acquired-skills box-shadow" id="web-development">
-                <h3>Web Development</h3>
+            <span class="acquired-skills box-shadow" id="skill-1">
+                <h3>Skill 1</h3>
+                <img src="./images/skills.webp" alt="">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, quod! Obcaecati numquam sint
                     ipsam animi harum. Voluptate repellat quae commodi id. Modi, vero? Non vitae fugit minima eos
-                    dolorem nostrum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ratione vero
-                    totam maiores debitis quia vitae doloribus explicabo laborum tempora! Fugit modi facere in.
-                    Aspernatur saepe adipisci distinctio illum tenetur.</p>
+                    dolorem nostrum. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 <span class="projects-btn"><a href="#">Projects <i class="fa-solid fa-angle-left"></i></a></span>
             </span>
 
-            <span class="acquired-skills box-shadow" id="android-development">
-                <h3>Android Development</h3>
+            <span class="acquired-skills box-shadow" id="skill-2">
+                <h3>Skill 2</h3>
+                <img src="./images/skills.webp" alt="">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, quod! Obcaecati numquam sint
                     ipsam animi harum. Voluptate repellat quae commodi id. Modi, vero? Non vitae fugit minima eos
-                    dolorem nostrum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ratione vero
-                    totam maiores debitis quia vitae doloribus explicabo laborum tempora! Fugit modi facere in.
-                    Aspernatur saepe adipisci distinctio illum tenetur.</p>
+                    dolorem nostrum. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 <span class="projects-btn"><a href="#">Projects <i class="fa-solid fa-angle-left"></i></a></span>
             </span>
 
-            <span class="acquired-skills box-shadow" id="ios-development">
-                <h3>iOS Development</h3>
+            <span class="acquired-skills box-shadow" id="skill-3">
+                <h3>Skill 3</h3>
+                <img src="./images/skills.webp" alt="">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, quod! Obcaecati numquam sint
                     ipsam animi harum. Voluptate repellat quae commodi id. Modi, vero? Non vitae fugit minima eos
-                    dolorem nostrum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ratione vero
-                    totam maiores debitis quia vitae doloribus explicabo laborum tempora! Fugit modi facere in.
-                    Aspernatur saepe adipisci distinctio illum tenetur.</p>
+                    dolorem nostrum. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 <span class="projects-btn"><a href="#">Projects <i class="fa-solid fa-angle-left"></i></a></span>
             </span>
         </div>
     </section>
 
-    <section class="projects-container" id="my-projects">
-        <h2>PROJECTS</h2>
+    <section class="certifications-container" id="certification">
+        <h2>CERTIFICATIONS</h2>
+        <div class="certifications">
+            <span class="certification box-shadow" id="certification-1">
+                <h3>Certification 1</h3>
+                <img src="images/certification.webp" class="certification-img">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odio quas neque earum nihil qui!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero aspernatur pariatur suscipit,
+                    quo enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate.</p>
+            </span>
+
+            <span class="certification box-shadow" id="certification-2">
+                <h3>Certification 2</h3>
+                <img src="images/certification.webp" class="certification-img">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odio quas neque earum nihil qui!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero aspernatur pariatur suscipit,
+                    quo enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate.</p>
+            </span>
+
+            <span class="certification box-shadow" id="certification-3">
+                <h3>Certification 3</h3>
+                <img src="images/certification.webp" class="certification-img">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odio quas neque earum nihil qui!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero aspernatur pariatur suscipit,
+                    quo enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate.</p>
+            </span>
+        </div>
+    </section>
+
+    <section class="active-projects-container" id="my-projects">
+        <h2>ACTIVE PROJECTS</h2>
         <div class="projects">
             <span class="completed-projects box-shadow" id="project-1">
                 <a href="#" class="visit-project">
                     <h3>Project 1</h3>
+                    <img src="./images/projects.jpg">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, quod! Obcaecati numquam sint
-                        ipsam animi harum. Voluptate repellat quae commodi id. Modi, vero? Non vitae fugit minima eos
-                        dolorem nostrum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ratione vero
-                        totam maiores debitis quia vitae doloribus explicabo laborum tempora! Fugit modi facere in.
-                        Aspernatur saepe adipisci distinctio illum tenetur.</p>
+                        ipsam animi harum. Voluptate repellat quae commodi id. Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Cupiditate.</p>
                 </a>
             </span>
             <span class="completed-projects box-shadow" id="project-2">
                 <a href="#" class="visit-project">
                     <h3>Project 2</h3>
+                    <img src="./images/projects.jpg">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, quod! Obcaecati numquam sint
-                        ipsam animi harum. Voluptate repellat quae commodi id. Modi, vero? Non vitae fugit minima eos
-                        dolorem nostrum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ratione vero
-                        totam maiores debitis quia vitae doloribus explicabo laborum tempora! Fugit modi facere in.
-                        Aspernatur saepe adipisci distinctio illum tenetur.</p>
+                        ipsam animi harum. Voluptate repellat quae commodi id. Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Cupiditate.</p>
                 </a>
             </span>
             <span class="completed-projects box-shadow" id="project-3">
                 <a href="#" class="visit-project">
                     <h3>Project 3</h3>
+                    <img src="./images/projects.jpg">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, quod! Obcaecati numquam sint
-                        ipsam animi harum. Voluptate repellat quae commodi id. Modi, vero? Non vitae fugit minima eos
-                        dolorem nostrum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ratione vero
-                        totam maiores debitis quia vitae doloribus explicabo laborum tempora! Fugit modi facere in.
-                        Aspernatur saepe adipisci distinctio illum tenetur.</p>
+                        ipsam animi harum. Voluptate repellat quae commodi id. Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Cupiditate.</p>
                 </a>
             </span>
         </div>
@@ -119,11 +150,16 @@
     <div class="footer-container" id="footer">
         <h2>Contact Me</h2>
         <div class="contact-me">
-            <span class="socials"><a href="mailto:ashishy0802@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></span>
-            <span class="socials"><a href="https://twitter.com/ashishytwt" target="_blank"><i class="fa-brands fa-twitter"></i></a></span>
-            <span class="socials"><a href="https://www.facebook.com/ashish.coder/" target="_blank"><i class="fa-brands fa-facebook"></i></a></span>
-            <span class="socials"><a href="https://www.instagram.com/ashishy_dev/" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
-            <span class="socials"><a href="https://github.com/ashish-yadv" target="_blank"><i class="fa-brands fa-github"></i></a></span>
+            <span><a href="mailto:ashishy0802@gmail.com" target="_blank"><i
+                        class="fa-solid fa-envelope socials"></i></a></span>
+            <span><a href="https://twitter.com/ashishytwt" target="_blank"><i
+                        class="fa-brands fa-twitter socials"></i></a></span>
+            <span><a href="https://www.facebook.com/ashish.coder/" target="_blank"><i
+                        class="fa-brands fa-facebook socials"></i></a></span>
+            <span><a href="https://www.instagram.com/ashishy_dev/" target="_blank"><i
+                        class="fa-brands fa-instagram socials"></i></a></span>
+            <span><a href="https://github.com/ashish-yadv" target="_blank"><i
+                        class="fa-brands fa-github socials"></i></a></span>
         </div>
     </div>
 
